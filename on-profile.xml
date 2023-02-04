@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
+
+    <ClientInitialization>
+        <UseStartBeforeLogon UserControllable="false">false</UseStartBeforeLogon>
+        <StrictCertificateTrust>false</StrictCertificateTrust>
+        <RestrictPreferenceCaching>false</RestrictPreferenceCaching>
+        <RestrictTunnelProtocols>IPSec</RestrictTunnelProtocols>
+        <BypassDownloader>true</BypassDownloader>
+        <WindowsVPNEstablishment>AllowRemoteUsers</WindowsVPNEstablishment>
+        <CertEnrollmentPin>pinAllowed</CertEnrollmentPin>
+        <CertificateMatch>
+            <KeyUsage>
+                <MatchKey>Digital_Signature</MatchKey>
+            </KeyUsage>
+            <ExtendedKeyUsage>
+                <ExtendedMatchKey>ClientAuth</ExtendedMatchKey>
+            </ExtendedKeyUsage>
+        </CertificateMatch>
+    </ClientInitialization>
+
+    <ServerList>
+        <HostEntry>
+            <HostName>United States</HostName>
+            <HostAddress>vip-6.uvpnonly.us</HostAddress>
+        </HostEntry>
+        <HostEntry>
+            <HostName>US</HostName>
+            <HostAddress>vip-7.uvpnonly.us</HostAddress>
+        </HostEntry>
+        <HostEntry>
+            <HostName>Singapore</HostName>
+            <HostAddress>vip-8.uvpnonly.us</HostAddress>
+        </HostEntry>
+        <HostEntry>
+            <HostName>Japan</HostName>
+            <HostAddress>vip-9.uvpnonly.us</HostAddress>
+        </HostEntry>
+    </ServerList>
+</AnyConnectProfile>
